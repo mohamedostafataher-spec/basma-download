@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بصمة - تحميل التطبيق</title>
+<style>
+body{margin:0;font-family:system-ui,"Segoe UI",Tahoma,sans-serif;background:#0b2e27;color:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center}
+.c{max-width:420px;padding:32px 24px;text-align:center}
+.logo{font-size:72px}h1{margin:.2em 0;font-size:38px}p{color:#cfe8e1;line-height:1.7}
+a.b{display:block;background:#e0a526;color:#1a1200;text-decoration:none;font-weight:800;padding:16px;border-radius:16px;font-size:20px;margin:24px 0 8px}
+small{color:#9fc7bd}ol{text-align:right;color:#cfe8e1;line-height:1.9}
+</style></head><body><div class="c">
+<div class="logo">🖐️</div><h1>بصمة</h1>
+<p>صيانة وتشطيب بثقة. اطلب فني قريب منك، قارن الأسعار، وتابع الشغل من الموبايل.</p>
+<a class="b" id="dl" href="https://github.com/mohamedostafataher-spec/basma-download/releases/download/latest/Basma.apk">حمّل التطبيق (أندرويد)</a>
+<small id="v"></small>
+<ol><li>حمّل الملف وافتحه.</li><li>لو الموبايل سأل عن "مصدر غير معروف"، اسمح بالتثبيت من المتصفح.</li><li>التطبيق بيبلّغك لما يبقى فيه تحديث.</li></ol>
+<script>fetch('version.json?t='+Date.now()).then(r=>r.json()).then(j=>{document.getElementById('v').textContent='الإصدار '+j.name+' ('+j.notes+')'}).catch(()=>{})</script>
+</div></body></html>
